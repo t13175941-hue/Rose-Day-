@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  background: #c9184a;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Pages */
+.page {
+  display: none;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.page.active {
+  display: flex;
+}
+
+/* Glass box */
+.box {
+  background: rgba(255, 192, 203, 0.85);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  width: 85%;
+  max-width: 380px;
+}
+
+/* Text */
+h1 {
+  color: #8b0035;
+}
+
+.text {
+  font-size: 16px;
+  margin: 15px 0;
+}
+
+/* Buttons */
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  background: #e63946;
+  color: white;
+  font-size: 16px;
+}
+
+/* Rose floating */
+.rose-float {
+  font-size: 50px;
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Images */
+.love-img {
+  width: 100px;
+}
+
+.garden {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+
+.big-rose {
+  font-size: 60px;
+  margin: 10px 0;
+}
+
+/* Falling roses */
+.petal {
+  position: fixed;
+  top: -10vh;
+  font-size: 22px;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+
